@@ -1,0 +1,11 @@
+.header{display:flex;flex-direction:column;align-items:center;padding:10px 0}.header__helper{display:flex;justify-content:flex-start;flex-wrap:wrap}
+.header__search-field{background:#fff;border:1px solid #bdbdbd;width:204px;height:26px;font-size:14px;border-radius:0;-webkit-appearance:none;outline:0}
+.header__search-action{position:relative;width:26px;height:26px;border:1px solid #bdbdbd;margin-left:-1px;background:url(../../img/search-button-bg.png);cursor:pointer}
+.header__search-action:before{content:'';display:block;width:16px;height:16px;position:absolute;top:3px;left:3px;background:url(../../img/forex-tsd_icons.png)}
+.header__mail{display:flex;outline:0;border:0;text-decoration:none;background:#27ae60;color:#fff;align-items:center;padding:0 10px 0 9px;margin-right:12px;margin-top:6px;height:26px}
+.header__mail:hover{color:#fff}.header__mail:after{content:'';display:block;width:13px;height:10px;background:url(../../img/forex-tsd_icons.png) 243px 152px;margin-left:5px}
+.header__search-form{display:flex;margin-right:13px;margin-top:6px}.header__logo-picture{outline:0;border:0;display:block}
+.header__profile{display:flex;margin-top:6px}.header__profile-username{background:0;border:0;outline:0;color:#042a37;font-weight:bold;padding:0 16px 0 4px;position:relative;cursor:pointer;font-size:14px}
+.header__profile-username:after{content:'';display:block;position:absolute;width:7px;height:5px;background:url(../../img/forex-tsd_icons.png) -2px -21px;right:2px;top:50%;margin-top:-3px}
+.header__profile-username:hover{color:#074e67}@media(min-width:768px){.header{padding:9px 0 19px;flex-direction:row;justify-content:space-between}
+}

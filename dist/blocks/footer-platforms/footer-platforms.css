@@ -1,0 +1,5 @@
+.footer-platforms{display:flex;justify-content:center;flex-wrap:wrap;max-width:530px;margin:17px auto 32px;list-style:none}
+.footer-platforms__part{width:70px}.footer-platforms__item{display:flex;justify-content:center;align-items:center;flex-direction:column;color:#252c2f;text-decoration:none}
+.footer-platforms__item:hover .footer-platforms__item__name{text-decoration:none}
+.footer-platforms__item:hover{color:#3b474c}.footer-platforms__name{text-decoration:underline;margin-top:7px}
+@media(min-width:768px){.footer-platforms{justify-content:space-between}}

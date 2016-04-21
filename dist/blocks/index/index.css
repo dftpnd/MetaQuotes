@@ -1,0 +1,3 @@
+*{margin:0;padding:0;box-sizing:border-box}body{font:13px Helvetica,Arial,Verdana,sans-serif}
+.limiter{max-width:1200px;margin:0 auto}.side-offset{padding:0 5px;overflow:hidden}
+@media(min-width:768px){.side-offset{padding:0 20px}}a{color:#2379b5}a:hover{color:#3394d8;text-decoration:none}

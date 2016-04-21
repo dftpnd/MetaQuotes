@@ -1,0 +1,10 @@
+.news-panel{padding:10px 0 1px}.news-panel__link{color:#848484;text-transform:uppercase;position:relative}
+.news-panel__link:hover{color:#b7b7b7}.news-panel__link--examples{font-size:10px;margin-right:10px}
+.news-panel__link--comments{text-decoration:none;margin-right:11px;font-size:11px}
+.news-panel__link--comments:before{content:'';display:inline-block;width:11px;height:12px;background:url(../../img/forex-tsd_icons.png) -19px -41px;margin-right:4px}
+.news-panel__link--views{font-size:11px;text-decoration:none;margin-right:4px}.news-panel__link--views:before{content:'';display:inline-block;width:14px;height:10px;margin-right:6px;background:url(../../img/forex-tsd_icons.png) -19px -59px}
+.news-list{margin-top:20px}.news-list__item{display:flex;max-width:840px}.news-list__item:not(:last-child){margin-bottom:18px}
+.news-list__picture{padding-right:19px;cursor:pointer}.news-list__picture img{border:1px solid #c4c4c4}
+.news-list__title{font-size:17px;font-family:Tahoma,Verdana,Arial,Helvetica,sans-serif;font-weight:bold;text-decoration:none}
+.news-list__content{flex:1 100%;padding-bottom:13px;border-bottom:1px solid #e8e8e8;margin-top:-5px}
+.news-list__author-box{padding:2px 0 10px}

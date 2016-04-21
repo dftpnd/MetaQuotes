@@ -1,0 +1,20 @@
+.pagination{display:flex;align-items:stretch;height:24px;margin-top:9px;list-style:none}
+.pagination__item{padding:0 6px;border:1px solid #e4e4e4;color:#3c83ba;display:block;text-decoration:none;outline:0;text-align:center;margin:1px 6px 1px 1px;line-height:20px;font-size:12px}
+.pagination__item:hover{margin:0 5px 0 0;border:2px solid #748cb6}.pagination__item--active{margin:0 5px 0 0;border:2px solid #d4d4d4;color:#13242f;background:#f7f7f7}
+.pagination__nav{color:#3c83ba;text-decoration:none;padding-top:4px;padding-left:3px}
+.news-panel{padding:10px 0 1px}.news-panel__link{color:#848484;text-transform:uppercase;position:relative}
+.news-panel__link:hover{color:#b7b7b7}.news-panel__link--examples{font-size:10px;margin-right:10px}
+.news-panel__link--comments{text-decoration:none;margin-right:11px;font-size:11px}
+.news-panel__link--comments:before{content:'';display:inline-block;width:11px;height:12px;background:url(../../img/forex-tsd_icons.png) -19px -41px;margin-right:4px}
+.news-panel__link--views{font-size:11px;text-decoration:none;margin-right:4px}.news-panel__link--views:before{content:'';display:inline-block;width:14px;height:10px;margin-right:6px;background:url(../../img/forex-tsd_icons.png) -19px -59px}
+.news-list{margin-top:20px}.news-list__item{display:flex;max-width:840px}.news-list__item:not(:last-child){margin-bottom:18px}
+.news-list__picture{padding-right:19px;cursor:pointer}.news-list__picture img{border:1px solid #c4c4c4}
+.news-list__title{font-size:17px;font-family:Tahoma,Verdana,Arial,Helvetica,sans-serif;font-weight:bold;text-decoration:none}
+.news-list__content{flex:1 100%;padding-bottom:13px;border-bottom:1px solid #e8e8e8;margin-top:-5px}
+.news-list__author-box{padding:2px 0 10px}.page{display:flex;position:relative;flex-direction:column;justify-content:center;align-items:center;padding-bottom:46px}
+.page__title{border-bottom:1px solid #e8e8e8;margin-top:13px;padding-bottom:5px}.page__content{flex:1;padding-right:10px}
+.page__aside{width:289px;margin-top:40px}.page__aside-banner{display:block;outline:0;text-decoration:none;margin:0 auto}
+.page__aside-banner:not(:last-child){margin-bottom:13px}.page__aside-banner img{display:block}
+.page__shadow{position:absolute;bottom:0;left:50%;width:2px;margin-left:-1px;height:20px}
+.page__shadow:before{content:'';position:absolute;display:block;height:20px;top:0;width:970px;left:-485px;background:url(../../img/page-shadow.png) center center no-repeat}
+@media(min-width:768px){.page{flex-direction:row;align-items:flex-start}}
