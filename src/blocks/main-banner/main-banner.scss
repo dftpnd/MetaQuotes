@@ -1,0 +1,15 @@
+.main-banner {
+	position: relative;
+	display: block;
+	text-align: center;
+	overflow: hidden;
+	height: 100px;
+
+	img {
+		position: absolute;
+		top: 0;
+		height: 100%;
+		left: 50%;
+		margin-left: -600px;
+	}
+}

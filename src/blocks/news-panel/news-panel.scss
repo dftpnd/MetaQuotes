@@ -1,0 +1,51 @@
+@import '../global/global';
+
+.news-panel {
+	padding: 10px 0 1px;
+
+	&__link {
+		color: $news-panel-link-color;
+		text-transform: uppercase;
+		position: relative;
+
+		&:hover {
+			color: lighten($news-panel-link-color, 20%);
+		}
+	}
+
+	&__link--examples {
+		font-size: $font-size-xs;
+		margin-right: 10px;
+	}
+
+	&__link--comments {
+		text-decoration: none;
+		margin-right: 11px;
+		font-size: $font-size-small-1;
+
+		&:before {
+			content: '';
+			display: inline-block;
+			width: 11px;
+			height: 12px;
+			background: url(../../img/forex-tsd_icons.png) -19px -41px;
+
+			margin-right: 4px;
+		}
+	}
+
+	&__link--views {
+		font-size: $font-size-small-1;
+		text-decoration: none;
+		margin-right: 4px;
+
+		&:before {
+			content: '';
+			display: inline-block;
+			width: 14px;
+			height: 10px;
+			margin-right: 6px;
+			background: url(../../img/forex-tsd_icons.png) -19px -59px;
+		}
+	}
+}

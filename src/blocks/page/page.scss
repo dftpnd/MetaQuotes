@@ -1,0 +1,71 @@
+@import '../pagination/pagination';
+@import '../news-list/news-list';
+@import '../global/global';
+
+.page {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 46px;
+
+	&__title {
+		border-bottom: 1px solid $page-border-color;
+		margin-top: 13px;
+		padding-bottom: 5px;
+	}
+
+	&__content {
+		flex: 1;
+		padding-right: 10px;
+	}
+
+	&__aside {
+		width: 289px;
+		margin-top: 40px;
+	}
+
+	&__aside-banner {
+		display: block;
+		outline: none;
+		text-decoration: none;
+		margin: 0 auto;
+
+		&:not(:last-child) {
+			margin-bottom: 13px;
+		}
+
+		img {
+			display: block;
+		}
+	}
+
+	&__shadow {
+		$shadow-width: 970px;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 2px;
+		margin-left: -1px;
+		height: 20px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			height: 20px;
+			top: 0;
+			width: $shadow-width;
+			left: -$shadow-width/2;
+			background: url(../../img/page-shadow.png) center center no-repeat;
+		}
+	}
+
+	@media (min-width: $display-sm) {
+		& {
+			flex-direction: row;
+			align-items: flex-start;
+		}
+	}
+}

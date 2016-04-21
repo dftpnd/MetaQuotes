@@ -1,0 +1,42 @@
+@import '../news-panel/news-panel';
+@import '../global/global';
+
+.news-list {
+	margin-top: 20px;
+
+	&__item {
+		display: flex;
+		max-width: 840px;
+
+		&:not(:last-child) {
+			margin-bottom: 18px;
+		}
+	}
+
+	&__picture {
+		padding-right: 19px;
+		cursor: pointer;
+
+		img {
+			border: 1px solid #c4c4c4;
+		}
+	}
+
+	&__title {
+		font-size: $font-size-large-2;
+		font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		text-decoration: none;
+	}
+
+	&__content {
+		flex: 1 100%;
+		padding-bottom: 13px;
+		border-bottom: 1px solid $page-border-color;
+		margin-top: -5px;
+	}
+
+	&__author-box {
+		padding: 2px 0 10px;
+	}
+}

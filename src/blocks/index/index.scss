@@ -1,0 +1,36 @@
+@import '../global/global';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font: $font-size-medium-1 Helvetica, Arial, Verdana, sans-serif;
+}
+
+.limiter {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.side-offset {
+	padding: 0 5px;
+	overflow: hidden;
+	@media (min-width: $display-sm) {
+		& {
+			padding: 0 20px;
+		}
+	}
+}
+
+a {
+	color: $link-color;
+}
+
+a:hover {
+	color: lighten($link-color, 10%);
+	text-decoration: none;
+}
+

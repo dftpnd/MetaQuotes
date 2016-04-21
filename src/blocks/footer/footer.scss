@@ -1,0 +1,17 @@
+@import '../global/global';
+
+.footer {
+	margin-top: 9px;
+	padding-bottom: 30px;
+
+	&__title {
+		text-align: center;
+		font-weight: normal;
+		font-size: $font-size-large-1;
+	}
+
+	&__copyright {
+		text-align: center;
+		margin-top: 5px;
+	}
+}

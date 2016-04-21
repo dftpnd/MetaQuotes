@@ -1,0 +1,129 @@
+@import '../global/global';
+
+$row-height: 26px;
+$row-top-indent: 6px;
+
+.header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px 0;
+
+	&__helper {
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+
+	&__search-field {
+		background: #fff;
+		border: 1px solid $search-field-border;
+		width: 204px;
+		height: $row-height;
+		font-size: $font-size-medium-2;
+		border-radius: 0;
+		-webkit-appearance: none;
+		outline: none;
+	}
+
+	&__search-action {
+		position: relative;
+		width: 26px;
+		height: $row-height;
+		border: 1px solid $search-field-border;
+		margin-left: -1px;
+		background: url(../../img/search-button-bg.png);
+		cursor: pointer;
+
+		&:before {
+			content: '';
+			display: block;
+			width: 16px;
+			height: 16px;
+			position: absolute;
+			top: 3px;
+			left: 3px;
+			background: url(../../img/forex-tsd_icons.png);
+		}
+	}
+
+	&__mail {
+		display: flex;
+		outline: none;
+		border: none;
+		text-decoration: none;
+		background: #27ae60;
+		color: #fff;
+		align-items: center;
+		padding: 0 10px 0 9px;
+		margin-right: 12px;
+		margin-top: $row-top-indent;
+		height: $row-height;
+
+		&:hover {
+			color: #fff;
+		}
+
+		&:after {
+			content: '';
+			display: block;
+			width: 13px;
+			height: 10px;
+			background: url(../../img/forex-tsd_icons.png) 243px 152px;
+			margin-left: 5px;
+		}
+	}
+
+	&__search-form {
+		display: flex;
+		margin-right: 13px;
+		margin-top: $row-top-indent;
+	}
+
+	&__logo-picture {
+		outline: none;
+		border: none;
+		display: block;
+	}
+
+	&__profile {
+		display: flex;
+		margin-top: $row-top-indent;
+	}
+
+	&__profile-username {
+		background: none;
+		border: none;
+		outline: none;
+		color: $profile-username-color;
+		font-weight: bold;
+		padding: 0 16px 0 4px;
+		position: relative;
+		cursor: pointer;
+		font-size: $font-size-medium-2;
+	}
+
+	&__profile-username:after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 7px;
+		height: 5px;
+		background: url(../../img/forex-tsd_icons.png) -2px -21px;
+		right: 2px;
+		top: 50%;
+		margin-top: -3px;
+	}
+
+	&__profile-username:hover {
+		color: lighten($profile-username-color, 10%)
+	}
+
+	@media (min-width: $display-sm) {
+		& {
+			padding: 9px 0 19px;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+	}
+}

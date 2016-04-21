@@ -1,0 +1,80 @@
+@import '../global/global';
+
+.menu-main {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: $font-size-medium-2;
+	list-style: none;
+	background: #033145;
+	border-bottom: 1px solid #c4c7c8;
+
+	&__item {
+		display: block;
+		line-height: 35px;
+		color: #fff;
+		text-decoration: none;
+		outline: none;
+		padding: 0 17px 0 18px;
+		position: relative;
+
+		&:hover {
+			background: $link-color;
+			color: #fff;
+		}
+	}
+
+	&__active {
+		background: $menu-main-tab-active !important;
+		color: $active-item-color;
+		font-weight: bold;
+
+		&:hover {
+			color: $link-color
+		}
+
+		&:after {
+			content: '';
+			display: block;
+			width: 100%;
+			left: 0;
+			bottom: -1px;
+			height: 1px;
+			position: absolute;
+			background: $menu-main-tab-active;
+		}
+	}
+
+	&__sub-menu {
+		list-style: none;
+		background: $menu-main-tab-active;
+		padding-left: 11px;
+		margin-bottom: 4px;
+		border-top: 2px solid $link-color;
+
+		&-item {
+			display: inline-block;
+		}
+
+		&-link {
+			text-decoration: none;
+			outline: none;
+			color: $active-item-color;
+			padding: 0 5px 0 6px;
+			line-height: 29px;
+		}
+
+		@media (min-width: $display-xs) {
+			& {
+				display: none;
+			}
+		}
+	}
+
+	@media (min-width: $display-xs) {
+		& {
+			flex-direction: row;
+			align-items: flex-start;
+		}
+	}
+}

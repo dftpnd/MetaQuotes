@@ -1,0 +1,42 @@
+@import '../global/global';
+
+.footer-platforms {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 530px;
+	margin: 17px auto 32px;
+	list-style: none;
+
+	&__part {
+		width: 70px;
+	}
+
+	&__item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		color: $footer-platforms-item-color;
+		text-decoration: none;
+
+		&:hover &__name {
+			text-decoration: none;
+		}
+	}
+
+	&__item:hover {
+		color: lighten($footer-platforms-item-color, 10%);
+	}
+
+	&__name {
+		text-decoration: underline;
+		margin-top: 7px;
+	}
+
+	@media (min-width: $display-sm) {
+		& {
+			justify-content: space-between;
+		}
+	}
+}
