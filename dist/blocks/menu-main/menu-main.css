@@ -1,0 +1,58 @@
+/* Display breakpoints*/
+/* Colors */
+/* Font */
+.menu-main {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 14px;
+  list-style: none;
+  background: #033145;
+  border-bottom: 1px solid #c4c7c8; }
+  .menu-main__item {
+    display: block;
+    line-height: 35px;
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    padding: 0 17px 0 18px;
+    position: relative; }
+    .menu-main__item:hover {
+      background: #2379b5;
+      color: #fff; }
+  .menu-main__active {
+    background: #ffd386 !important;
+    color: #13242f;
+    font-weight: bold; }
+    .menu-main__active:hover {
+      color: #2379b5; }
+    .menu-main__active:after {
+      content: '';
+      display: block;
+      width: 100%;
+      left: 0;
+      bottom: -1px;
+      height: 1px;
+      position: absolute;
+      background: #ffd386; }
+  .menu-main__sub-menu {
+    list-style: none;
+    background: #ffd386;
+    padding-left: 11px;
+    margin-bottom: 4px;
+    border-top: 2px solid #2379b5; }
+    .menu-main__sub-menu-item {
+      display: inline-block; }
+    .menu-main__sub-menu-link {
+      text-decoration: none;
+      outline: none;
+      color: #13242f;
+      padding: 0 5px 0 6px;
+      line-height: 29px; }
+    @media (min-width: 480px) {
+      .menu-main__sub-menu {
+        display: none; } }
+  @media (min-width: 480px) {
+    .menu-main {
+      flex-direction: row;
+      align-items: flex-start; } }

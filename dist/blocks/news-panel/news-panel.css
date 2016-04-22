@@ -1,0 +1,36 @@
+/* Display breakpoints*/
+/* Colors */
+/* Font */
+.news-panel {
+  padding: 10px 0 1px; }
+  .news-panel__link {
+    color: #848484;
+    text-transform: uppercase;
+    position: relative; }
+    .news-panel__link:hover {
+      color: #b7b7b7; }
+  .news-panel__link--examples {
+    font-size: 10px;
+    margin-right: 10px; }
+  .news-panel__link--comments {
+    text-decoration: none;
+    margin-right: 11px;
+    font-size: 11px; }
+    .news-panel__link--comments:before {
+      content: '';
+      display: inline-block;
+      width: 11px;
+      height: 12px;
+      background: url(../../img/forex-tsd_icons.png) -19px -41px;
+      margin-right: 4px; }
+  .news-panel__link--views {
+    font-size: 11px;
+    text-decoration: none;
+    margin-right: 4px; }
+    .news-panel__link--views:before {
+      content: '';
+      display: inline-block;
+      width: 14px;
+      height: 10px;
+      margin-right: 6px;
+      background: url(../../img/forex-tsd_icons.png) -19px -59px; }

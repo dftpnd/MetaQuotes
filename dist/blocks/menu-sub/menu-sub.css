@@ -1,0 +1,19 @@
+/* Display breakpoints*/
+/* Colors */
+/* Font */
+.menu-sub {
+  display: none;
+  list-style: none;
+  background: #ffd386;
+  padding-left: 11px;
+  margin-bottom: 4px; }
+  .menu-sub__item {
+    display: block;
+    text-decoration: none;
+    outline: none;
+    color: #13242f;
+    padding: 0 5px 0 6px;
+    line-height: 29px; }
+  @media (min-width: 480px) {
+    .menu-sub {
+      display: flex; } }

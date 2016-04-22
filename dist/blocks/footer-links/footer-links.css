@@ -1,0 +1,11 @@
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 740px;
+  margin: 0 auto;
+  list-style: none;
+  line-height: 25px; }
+  .footer-links__item {
+    margin-right: 11px;
+    text-decoration: none; }
