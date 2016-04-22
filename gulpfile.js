@@ -21,10 +21,10 @@ gulp.task('imagemin', function () {
 gulp.task('sass', function () {
 	return gulp.src('./src/blocks/**/*.scss')
 		.pipe(sass().on('error', sass.logError))
-		.pipe(uglifycss({
-			"maxLineLen": 80,
-			"uglyComments": true
-		}))
+		//.pipe(uglifycss({
+		//	"maxLineLen": 80,
+		//	"uglyComments": true
+		//}))
 		.pipe(gulp.dest('./dist/blocks'));
 });
 
@@ -32,7 +32,7 @@ gulp.task('sass', function () {
 gulp.task('ejs', function () {
 	return gulp.src('./src/blocks/**/*.html')
 		.pipe(ejs({}).on('error', gutil.log))
-		.pipe(htmlmin({collapseWhitespace: true}))
+		// .pipe(htmlmin({collapseWhitespace: true}))
 		.pipe(gulp.dest('./dist/blocks'));
 });
 
