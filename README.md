@@ -1,4 +1,4 @@
-# [Demo](https://cdn.rawgit.com/lkdnvc/MetaQuotes/demo/dist/blocks/index/index.html)
+# [Demo](https://cdn.rawgit.com/lkdnvc/MetaQuotes/demo2/dist/blocks/index/index.html)
 
 Для запуска локально:
 
