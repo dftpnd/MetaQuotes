@@ -1,9 +1,10 @@
-# [Demo](https://cdn.rawgit.com/lkdnvc/MetaQuotes/demo2/dist/blocks/index/index.html)
+#Установка:
+1. [Hugo](https://gohugo.io/)
+2. [node.js](https://nodejs.org/en/) последнюю версию.
+3. Gulp - `npm install --global gulp-cli`
 
-Для запуска локально:
-
-npm i
-
-npm run build
-
-После билда открыть файл /dist/blocks/index/index.html
+#Запуск сайта (все команды в корне сайта)
+1. `hugo server` - запускает сервер хуго
+  1.2 `hugo server --buildDrafts` - публикует черновики (нужно для разработки)
+2. `gulp build` - компилирует sass файлы в css (минимизирует их), минимизирует js файлы, минимизирует картинки и иконки.
+  2.1. `gulp watch` - делает все тоже самое что и билд, и начинает следить за изменениями в файловой системе (нужно для разработки)
